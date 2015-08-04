@@ -11,6 +11,10 @@ html,body {
     color: #657b83;
 }
 
+span {
+    display: inline-block;
+}
+
 * {
     font-family: 'Fira Code';
     text-rendering: optimizeLegibility;
@@ -43,15 +47,27 @@ html,body {
 }
 
 #powerline-hostname {
+    height: 24px;
     display: inline-block;
     background-color: #b58900;
 }
 
 #powerline-hostname-end {
+    height: 24px;
+    font-size: 17px;
     color: #b58900;
+    background-color: #268bd2;
 }
 
 #powerline-section {
+    height: 24px;
     display: inline-block;
     background-color: #268bd2;
+}
+
+#powerline-section-end {
+    height: 24px;
+    display: inline-block;
+    color: #268bd2;
+    background-color: #eee8d5;
 }
