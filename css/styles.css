@@ -22,6 +22,7 @@ span {
 
 #container {
     position: absolute;
+    float: left;
     padding: 0 20px 20px;
     top: 35%;
     left: 0;
@@ -33,6 +34,7 @@ span {
 }
 
 #header {
+    float: left;
     -webkit-box-shadow: 1px 1px 20px 0px #000;
     -moz-box-shadow: 1px 1px 20px 0px #000;
     box-shadow: 1px 1px 20px 0px #000;
@@ -43,30 +45,40 @@ span {
 }
 
 #powerline-container{
-    
+    background-color: #268bd2;
 }
 
 #powerline-hostname {
+    position: relative;
+    float: left;
     height: 24px;
     display: inline-block;
     background-color: #b58900;
 }
 
 #powerline-hostname-end {
+    top: -1px;
+    position: relative;
+    float: left;
     height: 24px;
-    font-size: 17px;
+    font-size: 18px;
     color: #b58900;
-    background-color: #268bd2;
+    background-color: inherit;
 }
 
 #powerline-section {
+    position: relative;
+    float: left;
     height: 24px;
     display: inline-block;
-    background-color: #268bd2;
+    background-color: inherit;
 }
 
 #powerline-section-end {
-    height: 24px;
+    position: relative;
+    float: left;
+    height: 23px;
+    font-size: 18px;
     display: inline-block;
     color: #268bd2;
     background-color: #eee8d5;
