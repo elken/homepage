@@ -44,42 +44,43 @@ span {
     padding: 8px;
 }
 
-#powerline-container{
-    background-color: #268bd2;
+#powerline-container {
+    height: 24px;
+    background: #eee8d5;
 }
 
-#powerline-hostname {
+#powerline-container .powerline {
     position: relative;
     float: left;
     height: 24px;
-    display: inline-block;
+    padding: 0 12px 0 24px;
+    line-height: 24px;
+}
+
+#powerline-container .powerline:after {
+    position: absolute;
+    content: "";
+    right: -12px;
+    top: 0;
+    z-index: -21;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+#powerline-container #hostname {
     background-color: #b58900;
 }
 
-#powerline-hostname-end {
-    top: -1px;
-    position: relative;
-    float: left;
-    height: 24px;
-    font-size: 18px;
-    color: #b58900;
-    background-color: inherit;
+#powerline-container #hostname:after {
+    border-left: 12px solid #b58900;
 }
 
-#powerline-section {
-    position: relative;
-    float: left;
-    height: 24px;
-    display: inline-block;
-    background-color: inherit;
+#powerline-container #section {
+    background-color: #268bd2;
 }
 
-#powerline-section-end {
-    position: relative;
-    float: left;
-    height: 23px;
-    font-size: 18px;
-    display: inline-block;
-    color: #268bd2;
-    background-color: #eee8d5;
+#powerline-container #section:after {
+    border-left: 12px solid #268bd2;
 }
