@@ -66,6 +66,7 @@ html,body {
 }
 
 #powerline-container #hostname {
+    color: black;
     background-color: #b58900;
 }
 
@@ -74,6 +75,7 @@ html,body {
 }
 
 #powerline-container #section {
+    color: black;
     background-color: #268bd2;
 }
 

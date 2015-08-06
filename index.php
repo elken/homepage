@@ -1,26 +1,34 @@
+<?php
+$username = exec("whoami");
+$hostname = exec("hostname");
+
+if (true)
+{
+echo '
 <html>
     <head>
         <title>Where the heart is</title>
-        <script src="js/jquery-2.1.4.min.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <script>
-            
-        </script>
     </head>
     <body>
         <div id="container">
             <div id="header">
                 <div id="powerline-container">
                     <div class="powerline" id="hostname"> 
-                        <?=echo "hello"; ?>
+                        ' . $username . '@' . $hostname . '
                     </div>
 
                     <div class="powerline" id="section"> 
-                        test section 
+                        ~
+                    </div>
+
+                    <div class="command">
                     </div>
                 </div>
             </div>
         </div>
     </body>
-</html>
+</html>';
+}
+?>
